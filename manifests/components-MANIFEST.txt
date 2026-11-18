@@ -1,0 +1,444 @@
+COMPONENTS — corresponding source for copyleft components that are not
+operating-system packages of the images
+==============================================================================
+
+Published under the offer in THIRD-PARTY-NOTICES.txt section 3.0, in the
+components/ directory of the source repository at the build's tag. Each archive
+below is listed with where it was fetched from and its SHA-256, so what is
+downloaded can be checked against this file, which travels with the product.
+
+components/keyutils-1.5.8-3.el7.src.rpm
+    licence  : LGPL-2.1-or-later
+    why      : libkeyutils inside psycopg_binary.libs/ in the extraction image
+    fetched  : https://vault.centos.org/7.9.2009/os/Source/SPackages/keyutils-1.5.8-3.el7.src.rpm
+    retrieved: 2026-11-18
+    size     : 77575
+    sha256   : eff16e16f707fd28436afe4cf7b7c2e34b9f827e7f6beacf3c6eecbf74e9f850
+
+------------------------------------------------------------------------------
+OpenCV's bundled native libraries -- OCR engine "paddle" on a Mac only
+------------------------------------------------------------------------------
+
+The paddle-ocr environment installs two OpenCV wheels into one cv2/ directory
+and ships the native libraries of both. How each set was identified is in
+opencv-ffmpeg-PROVENANCE.txt beside this file. Every archive and patch below
+matched the sha256 recorded by the publisher named in its 'checked' line.
+
+components/opencv-contrib-python-4.10.0.84/ffmpeg-6.0.tar.xz
+    size     : 10234012
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/ffmpeg-6.0.tar.xz
+    sha256   : 57be87c22d9b49c112b6d24bc67d42508660e6b718b3db89c44e47e289137082
+
+components/opencv-contrib-python-4.10.0.84/aribb24-v1.0.4.tar.bz2
+    size     : 40535
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/aribb24-v1.0.4.tar.bz2
+    sha256   : 88b58dd760609372701087e25557ada9f7c6d973306c017067c5dcaf9e2c9710
+
+components/opencv-contrib-python-4.10.0.84/gettext-0.22.4.tar.gz
+    size     : 26753319
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/gettext-0.22.4.tar.gz
+    sha256   : c1e0bb2a4427a9024390c662cd532d664c4b36b8ff444ed5e54b115fdb7a1aea
+
+components/opencv-contrib-python-4.10.0.84/gmp-6.3.0.tar.xz
+    size     : 2094196
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/gmp-6.3.0.tar.xz
+    sha256   : a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898
+
+components/opencv-contrib-python-4.10.0.84/gnutls-3.8.2.tar.xz
+    size     : 6456540
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/gnutls-3.8.2.tar.xz
+    sha256   : e765e5016ffa9b9dd243e363a0460d577074444ee2491267db2e96c9c2adef77
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/aribb24.rb
+    size     : 2340
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/aribb24.rb
+    sha256   : 7ca9199eebbfcfda7eaa4de709a864d6aff5b9181d14938f0000b14102d28ce0
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/ffmpeg.rb
+    size     : 5287
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/ffmpeg.rb
+    sha256   : 00c51828140caff341847459bea1a33298482f0860acd3eec6e58c6924930556
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/gettext.rb
+    size     : 2325
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/gettext.rb
+    sha256   : 26845fad8369245b4e8417508dae54e5a1243f8271ee90176b3f77a33e22c535
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/gmp.rb
+    size     : 3201
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/gmp.rb
+    sha256   : 80ae3d5511388a761689e1a81272b187b100908f51271efb16aa8159f808f400
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/gnutls.rb
+    size     : 2345
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/gnutls.rb
+    sha256   : c60841144a35f1b19359db882f22ef73fa808d2e65dda738c88aa413f12e063b
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/lame.rb
+    size     : 2693
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/lame.rb
+    sha256   : 44baa9cee6e35bd8410141688cb75476f21d1b9df374c0788468a7a24a25cb96
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/libbluray.rb
+    size     : 2611
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/libbluray.rb
+    sha256   : 5508b96a809e1b87ac267cb12f86e5a9fecc21b68105d2aee662b7ea31634161
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/libidn2.rb
+    size     : 2646
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/libidn2.rb
+    sha256   : cedee46d44975e5ef6521453590e92b0ba59b8929b68d339d86049435f4e20d4
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/libsoxr.rb
+    size     : 2874
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/libsoxr.rb
+    sha256   : 835f1235685332775a04156870fc61da801b06f8173598f3a20d65f3255ccbb1
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/libtasn1.rb
+    size     : 2342
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/libtasn1.rb
+    sha256   : d08a38f2df14f02bb752938552f2306767577b37c77e54a1ba4b3209073bf2c6
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/libunistring.rb
+    size     : 2535
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/libunistring.rb
+    sha256   : 1803b2aa4e76b70b4b45dfaee8dcbf475eef2d0e1bd6f77f10a8bbb57b936c91
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/nettle.rb
+    size     : 2334
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/nettle.rb
+    sha256   : 1bbd416c2cfb9871e4b2bf250e11af56192cc516ee0ad059e0ca18357a4e8287
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/srt.rb
+    size     : 2160
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/srt.rb
+    sha256   : dfee8f4568bd1b25ac77ef697ae63879e51f915a86e4fa27432719003395a0a0
+
+components/opencv-contrib-python-4.10.0.84/homebrew-formula/zeromq.rb
+    size     : 2602
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/homebrew-formula/zeromq.rb
+    sha256   : a3407cf19ff8f96aee14bf942b8641cd8ec57f79e26753fc2cf01dc48089bdd1
+
+components/opencv-contrib-python-4.10.0.84/lame-3.100.tar.gz
+    size     : 1524133
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/lame-3.100.tar.gz
+    sha256   : ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
+
+components/opencv-contrib-python-4.10.0.84/libbluray-1.3.4.tar.bz2
+    size     : 756323
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/libbluray-1.3.4.tar.bz2
+    sha256   : 478ffd68a0f5dde8ef6ca989b7f035b5a0a22c599142e5cd3ff7b03bbebe5f2b
+
+components/opencv-contrib-python-4.10.0.84/libidn2-2.3.4.tar.gz
+    size     : 2083823
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/libidn2-2.3.4.tar.gz
+    sha256   : 93caba72b4e051d1f8d4f5a076ab63c99b77faee019b72b9783b267986dbb45f
+
+components/opencv-contrib-python-4.10.0.84/libtasn1-4.19.0.tar.gz
+    size     : 1786576
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/libtasn1-4.19.0.tar.gz
+    sha256   : 1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a
+
+components/opencv-contrib-python-4.10.0.84/libunistring-1.1.tar.gz
+    size     : 4272875
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/libunistring-1.1.tar.gz
+    sha256   : a2252beeec830ac444b9f68d6b38ad883db19919db35b52222cf827c385bdb6a
+
+components/opencv-contrib-python-4.10.0.84/nettle-3.9.1.tar.gz
+    size     : 2396741
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/nettle-3.9.1.tar.gz
+    sha256   : ccfeff981b0ca71bbd6fbcb054f407c60ffb644389a5be80d6716d5b550c6ce3
+
+components/opencv-contrib-python-4.10.0.84/patches/ffmpeg-6.0_2-add-av_stream_get_first_dts-for-chromium.patch
+    size     : 1236
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/patches/ffmpeg-6.0_2-add-av_stream_get_first_dts-for-chromium.patch
+    sha256   : 57e26caced5a1382cb639235f9555fc50e45e7bf8333f7c9ae3d49b3241d3f77
+
+components/opencv-contrib-python-4.10.0.84/patches/ffmpeg-6.0_2-effadce6c756.patch
+    size     : 2192
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/patches/ffmpeg-6.0_2-effadce6c756.patch
+    sha256   : 9800c708313da78d537b61cfb750762bb8ad006ca9335b1724dbbca5669f5b24
+
+components/opencv-contrib-python-4.10.0.84/patches/libsoxr-arm64_defines.patch
+    size     : 2404
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/patches/libsoxr-arm64_defines.patch
+    sha256   : 9df5737a21b9ce70cc136c302e195fad9f9f6c14418566ad021f14bb34bb022c
+
+components/opencv-contrib-python-4.10.0.84/soxr-0.1.3-Source.tar.xz
+    size     : 94384
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/soxr-0.1.3-Source.tar.xz
+    sha256   : b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889
+
+components/opencv-contrib-python-4.10.0.84/srt-1.5.3.tar.gz
+    size     : 1706632
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/srt-1.5.3.tar.gz
+    sha256   : befaeb16f628c46387b898df02bc6fba84868e86a6f6d8294755375b9932d777
+
+components/opencv-contrib-python-4.10.0.84/zeromq-4.3.5.tar.gz
+    size     : 2530237
+    checked  : ocr-third-party v1.1.1, matches its opencv-bundled-MANIFEST.txt
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/opencv-bundled/zeromq-4.3.5.tar.gz
+    sha256   : 6653ef5910f17954861fe72332e68b03ca6e4d9c7160eb3a8de5a5a913bfab43
+
+components/opencv-contrib-python-4.10.0.84/x264-r3108-31e19f9.tar.bz2
+    size     : 778279
+    checked  : ocr-third-party v1.1.1 (checked there against opencv-ffmpeg-PROVENANCE.txt)
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/x264-r3108-31e19f9.tar.bz2
+    sha256   : 01a4acb74eea1118c3aa96c3e18ee3384bc1f2bc670f31fb0f63be853e4d9d08
+
+components/opencv-contrib-python-4.10.0.84/x265-f0c1022b6.tar.gz
+    size     : 1538253
+    checked  : ocr-third-party v1.1.1 (checked there against opencv-ffmpeg-PROVENANCE.txt)
+    fetched  : https://github.com/saishunkan-system-hue/ocr-third-party/raw/v1.1.1/components/x265-f0c1022b6.tar.gz
+    sha256   : 5ca3403c08de4716719575ec56c686b1eb55b078c0fe50a064dcf1ac20af1618
+
+components/opencv-python-5.0.0.93/homebrew-formula/ffmpeg.rb
+    size     : 5350
+    checked  : homebrew-core a671b0c7ae (2025-05-27), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/a671b0c7ae/Formula/
+    sha256   : 562782f559db343cb8c628c5c30e1ef79dc823bb930819e3adf37c0cef1d53d3
+
+components/opencv-python-5.0.0.93/ffmpeg-7.1.1.tar.xz
+    size     : 11019500
+    checked  : matches the sha256 in the formula
+    fetched  : https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz
+    sha256   : 733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1
+
+components/opencv-python-5.0.0.93/patches/ffmpeg-d1ed5c06e3edc5f2b5f3664c80121fa55b0baa95.patch
+    size     : 1219
+    checked  : patch; matches the sha256 in the formula
+    fetched  : https://github.com/FFmpeg/FFmpeg/commit/d1ed5c06e3edc5f2b5f3664c80121fa55b0baa95.patch?full_index=1
+    sha256   : 0eb23ab90c0e5904590731dd3b81c86a4127785bc2b367267d77723990fb94a2
+
+components/opencv-python-5.0.0.93/patches/ffmpeg-add-av_stream_get_first_dts-for-chromium.patch
+    size     : 1236
+    checked  : patch; matches the sha256 in the formula
+    fetched  : https://gitlab.archlinux.org/archlinux/packaging/packages/ffmpeg/-/raw/5670ccd86d3b816f49ebc18cab878125eca2f81f/add-av_stream_get_first_dts-for-chromium.patch
+    sha256   : 57e26caced5a1382cb639235f9555fc50e45e7bf8333f7c9ae3d49b3241d3f77
+
+components/opencv-python-5.0.0.93/homebrew-formula/x265.rb
+    size     : 4374
+    checked  : homebrew-core b310103859 (2025-05-01), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/b310103859/Formula/
+    sha256   : 0b37a02f95fe4935271558ec4e6f02ea73ae283d107410a57b088559e39ff8f7
+
+components/opencv-python-5.0.0.93/x265_4.1.tar.gz
+    size     : 1725279
+    checked  : matches the sha256 in the formula
+    fetched  : https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
+    sha256   : a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29
+
+components/opencv-python-5.0.0.93/patches/x265-b354c009a60bcd6d7fc04014e200a1ee9c45c167.patch
+    size     : 762
+    checked  : patch; matches the sha256 in the formula
+    fetched  : https://api.bitbucket.org/2.0/repositories/multicoreware/x265_git/diff/b354c009a60bcd6d7fc04014e200a1ee9c45c167
+    sha256   : f7d3ce261c4b0cd461b55ad00de38ffa6a7cc2fa13ae6f034b3e46d8bb3cb6a8
+
+components/opencv-python-5.0.0.93/patches/x265-51ae8e922bcc4586ad4710812072289af91492a8.patch
+    size     : 1557
+    checked  : patch; matches the sha256 in the formula
+    fetched  : https://api.bitbucket.org/2.0/repositories/multicoreware/x265_git/diff/51ae8e922bcc4586ad4710812072289af91492a8
+    sha256   : 56c78f60cbaac61a44cb6e9889ece3380f9b60d32a4b704e274d9a636a16379d
+
+components/opencv-python-5.0.0.93/homebrew-formula/rubberband.rb
+    size     : 1917
+    checked  : homebrew-core a84a6e19bc (2025-03-20), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/a84a6e19bc/Formula/
+    sha256   : 52e24ac53881a2cd6acd93891bdaf01b25e4163a536b65afe8694ff2048fb93b
+
+components/opencv-python-5.0.0.93/rubberband-4.0.0.tar.bz2
+    size     : 236705
+    checked  : matches the sha256 in the formula
+    fetched  : https://breakfastquay.com/files/releases/rubberband-4.0.0.tar.bz2
+    sha256   : af050313ee63bc18b35b2e064e5dce05b276aaf6d1aa2b8a82ced1fe2f8028e9
+
+components/opencv-python-5.0.0.93/homebrew-formula/libvidstab.rb
+    size     : 2363
+    checked  : homebrew-core 164e28cde8 (2025-06-07), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/164e28cde8/Formula/
+    sha256   : 0dca08908e5c58d2174f0013a7ce362ba95684b376aeb6a71f4a3e758e97c9c4
+
+components/opencv-python-5.0.0.93/libvidstab-1.1.1.tar.gz
+    size     : 80717
+    checked  : matches the sha256 in the formula
+    fetched  : https://github.com/georgmartius/vid.stab/archive/refs/tags/v1.1.1.tar.gz
+    sha256   : 9001b6df73933555e56deac19a0f225aae152abbc0e97dc70034814a1943f3d4
+
+components/opencv-python-5.0.0.93/homebrew-formula/nettle.rb
+    size     : 2077
+    checked  : homebrew-core 45a424e6a1 (2025-03-19), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/45a424e6a1/Formula/
+    sha256   : 56d5e95450ad48dc2f365ecbbfcab7c3f37dfec31c86460557c7b08e4597fe52
+
+components/opencv-python-5.0.0.93/nettle-3.10.1.tar.gz
+    size     : 2643267
+    checked  : matches the sha256 in the formula
+    fetched  : https://ftp.gnu.org/gnu/nettle/nettle-3.10.1.tar.gz
+    sha256   : b0fcdd7fc0cdea6e80dcf1dd85ba794af0d5b4a57e26397eee3bc193272d9132
+
+components/opencv-python-5.0.0.93/homebrew-formula/glib.rb
+    size     : 8853
+    checked  : homebrew-core a2f5a978f3 (2025-06-14), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/a2f5a978f3/Formula/
+    sha256   : 14ea996d167a7594a3f65c944d53c65f164b99ceb6fe04b3b4cfb0c370b1e15b
+
+components/opencv-python-5.0.0.93/glib-2.84.3.tar.xz
+    size     : 5615704
+    checked  : matches the sha256 in the formula
+    fetched  : https://download.gnome.org/sources/glib/2.84/glib-2.84.3.tar.xz
+    sha256   : aa4f87c3225bf57ca85f320888f7484901a17934ca37023c3bd8435a72db863e
+
+components/opencv-python-5.0.0.93/patches/glib-hardcoded-paths.diff
+    size     : 1523
+    checked  : patch; matches the sha256 in the formula
+    fetched  : https://raw.githubusercontent.com/Homebrew/formula-patches/b46d8deae6983110b4e39bb2971bcbd10bb59716/glib/hardcoded-paths.diff
+    sha256   : d846efd0bf62918350da94f850db33b0f8727fece9bfaf8164566e3094e80c97
+
+components/opencv-python-5.0.0.93/homebrew-formula/fribidi.rb
+    size     : 1740
+    checked  : homebrew-core a65e05e2ed (2025-03-19), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/a65e05e2ed/Formula/
+    sha256   : dee3d4b95955353c853931abaff1793fbc2d01e575c6d255a2e5570fee3f5d83
+
+components/opencv-python-5.0.0.93/fribidi-1.0.16.tar.xz
+    size     : 1098260
+    checked  : matches the sha256 in the formula
+    fetched  : https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
+    sha256   : 1b1cde5b235d40479e91be2f0e88a309e3214c8ab470ec8a2744d82a5a9ea05c
+
+components/opencv-python-5.0.0.93/homebrew-formula/srt.rb
+    size     : 2188
+    checked  : homebrew-core 39c8c750af (2025-05-12), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/39c8c750af/Formula/
+    sha256   : 6fe822dcdcff977570fd00b08466ba0056accb0ac0eb70d43473a2526ac9d291
+
+components/opencv-python-5.0.0.93/srt-1.5.4.tar.gz
+    size     : 1743040
+    checked  : matches the sha256 in the formula
+    fetched  : https://github.com/Haivision/srt/archive/refs/tags/v1.5.4.tar.gz
+    sha256   : d0a8b600fe1b4eaaf6277530e3cfc8f15b8ce4035f16af4a5eb5d4b123640cdd
+
+components/opencv-python-5.0.0.93/patches/srt-7962936829e016295e5c570539eb2520b326da4c.patch
+    size     : 738
+    checked  : patch; matches the sha256 in the formula
+    fetched  : https://github.com/Haivision/srt/commit/7962936829e016295e5c570539eb2520b326da4c.patch?full_index=1
+    sha256   : e4489630886bf8b26f63a23c8b1aec549f7280f07713ded07fce281e542725f7
+
+components/opencv-python-5.0.0.93/homebrew-formula/libssh.rb
+    size     : 2273
+    checked  : homebrew-core d35aa0cf69 (2025-03-19), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/d35aa0cf69/Formula/
+    sha256   : db006131ef2d658fd5059c46743703369ceaf5e5192a9403294d46db5a3290a6
+
+components/opencv-python-5.0.0.93/libssh-0.11.1.tar.xz
+    size     : 621108
+    checked  : matches the sha256 in the formula
+    fetched  : https://www.libssh.org/files/0.11/libssh-0.11.1.tar.xz
+    sha256   : 14b7dcc72e91e08151c58b981a7b570ab2663f630e7d2837645d5a9c612c1b79
+
+components/opencv-python-5.0.0.93/homebrew-formula/graphite2.rb
+    size     : 2863
+    checked  : homebrew-core 3212f5ae92 (2025-06-04), the formula in effect on 2025-06-15
+    fetched  : https://github.com/Homebrew/homebrew-core/blob/3212f5ae92/Formula/
+    sha256   : a76fa768eaa6a9f0abc88a931ff6b7615df03ad4e0ecab0185d39fae23612960
+
+components/opencv-python-5.0.0.93/graphite2-1.3.14.tgz
+    size     : 6630061
+    checked  : matches the sha256 in the formula
+    fetched  : https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+    sha256   : f99d1c13aa5fa296898a181dff9b82fb25f6cc0933dbaa7a475d8109bd54209d
+
+------------------------------------------------------------------------------
+Linux wheels -- OCR engine "paddle_gpu" (linux/amd64)
+------------------------------------------------------------------------------
+
+opencv-contrib-python 4.10.0.84 (manylinux2014 x86_64) builds FFmpeg 5.1.4
+without --enable-gpl (LGPL-2.1-or-later) and Qt 5.15.13 (LGPL-3.0) itself and
+bundles them in opencv_contrib_python.libs/. The versions are set in the
+project's own Dockerfile at tag 84, published here beside them. Only Qt's
+qtbase libraries (Core, Gui, Widgets, Test, XcbQpa) are shipped, so the qtbase
+module's source is published rather than the 660 MB qt-everywhere archive the
+Dockerfile downloads; the configure line is in that Dockerfile.
+
+shapely bundles GEOS 3.14.1 (LGPL-2.1-or-later), in the paddle_gpu image and
+in the Mac paddle environment; version from the library's soname.
+
+components/opencv-contrib-python-4.10.0.84-linux/qtbase-everywhere-opensource-src-5.15.13.tar.xz
+    size     : 50862768
+    checked  : matches the md5 in Qt's md5sums.txt in the same directory
+    fetched  : https://download.qt.io/archive/qt/5.15/5.15.13/submodules/qtbase-everywhere-opensource-src-5.15.13.tar.xz
+    sha256   : 4cca51dcc1f22ceeee6b3e33cd1c3a60b14e85e24644dca3af89a2c2989ab809
+
+components/opencv-contrib-python-4.10.0.84-linux/ffmpeg-5.1.4.tar.xz
+    size     : 10009968
+    checked  : no checksum published by upstream; SHA-256 as fetched
+    fetched  : https://ffmpeg.org/releases/ffmpeg-5.1.4.tar.xz
+    sha256   : 54383bb890a1cd62580e9f1eaa8081203196ed53bde9e98fb6b0004423f49063
+
+components/opencv-contrib-python-4.10.0.84-linux/Dockerfile_x86_64
+    size     : 6363
+    checked  : the build recipe: FFMPEG_VERSION=5.1.4, QT_VERSION=5.15.13, and the Qt configure line
+    fetched  : https://raw.githubusercontent.com/opencv/opencv-python/84/docker/manylinux2014/Dockerfile_x86_64
+    sha256   : c5a873fd0e5ce4d1b843fe8db313d5d30e7eb346ce76fc2ed752da396b85a7e1
+
+components/shapely-geos/geos-3.14.1.tar.bz2
+    size     : 7013834
+    checked  : no checksum published by upstream; SHA-256 as fetched
+    fetched  : https://download.osgeo.org/geos/geos-3.14.1.tar.bz2
+    sha256   : 3c20919cda9a505db07b5216baa980bacdaa0702da715b43f176fb07eff7e716
+
+------------------------------------------------------------------------------
+GCC runtime libraries bundled by Python wheels
+------------------------------------------------------------------------------
+
+The builds identified in section 5.14 of THIRD-PARTY-NOTICES.txt, by matching
+the SHA-256 prefix auditwheel puts in each library's name against the files of
+the manylinux2014 image and asking rpm which package owns the match. Both
+source RPMs carry CentOS's signature (key 24c6a8a7f4a80eb5), checked with
+rpm -K against /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7.
+
+components/gcc-runtime/gcc-4.8.5-44.el7.src.rpm
+    size     : 79314655
+    checked  : CentOS 7 signature (rpm -K); source of libquadmath 4.8.5-44.el7
+               (96973f99) and libgfortran 4.8.5-44.el7 (91cc3cb1)
+    fetched  : https://vault.centos.org/7.9.2009/os/Source/SPackages/gcc-4.8.5-44.el7.src.rpm
+    sha256   : 642c4085f6af9565e39583e54a9d7a5d9e6b93dd8c8e9474aec8a892d6c7aa36
+
+components/gcc-runtime/gcc-libraries-8.3.1-2.1.1.el7.src.rpm
+    size     : 137336608
+    checked  : CentOS 7 signature (rpm -K); source of libgfortran5
+               8.3.1-2.1.1.el7 (040039e1). Over git's 100 MB file limit, so
+               published in the release asset components-large-<tag>.tar
+    fetched  : https://vault.centos.org/7.9.2009/os/Source/SPackages/gcc-libraries-8.3.1-2.1.1.el7.src.rpm
+    sha256   : cf2a1d2c2e5a56eb2e495c2638e64769b73db07555e1f7ce34cbd9feff6891f5
+
