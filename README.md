@@ -16,10 +16,13 @@ GPL-2.0, GPL-3.0, LGPL-2.1, BSD, MIT, Apache-2.0 and many more across the
 repository grants you anything, and none purports to: whoever published this has
 no right to relicense other people's work, and has not tried to.
 
-`licenses/` holds the texts of the copyleft licences that made this publication
-necessary. For any individual archive, the authoritative licence is the one
-inside that archive, and `manifests/` records the licence each package declared
-when it was collected.
+`licenses/` republishes the few licence texts the product itself carries beside
+its manifests: poppler's GPL-2.0 and GPL-3.0 texts (with its Debian copyright
+file, where the build has one), Redis's BSD-3-Clause licence and the licences
+of the libraries Redis bundles. It is not a collection of every licence
+involved, and it is not where the LGPL texts are. For any individual archive,
+the authoritative licence is the one inside that archive, and `manifests/`
+records the licence each package declared when it was collected.
 
 ## Finding the source for your machine
 
@@ -40,7 +43,7 @@ This build: **`v1.0.0`**
 |---|---|
 | `components/` | source for components shipped as binaries that are not operating-system packages (gcc-runtime, keyutils-1.5.8-3.el7.src.rpm, opencv-contrib-python-4.10.0.84, opencv-contrib-python-4.10.0.84-linux, opencv-python-5.0.0.93, shapely-geos) |
 | `manifests/` | every archive named with the checksum it was verified against |
-| `licenses/` | the licence texts |
+| `licenses/` | the licence texts the product carries for poppler and Redis; every other archive carries its own |
 | Release assets | the operating-system source, per architecture, listed below |
 
 The release attached to this tag carries:
