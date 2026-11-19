@@ -35,7 +35,7 @@ SiftGem runs on two processor architectures. Take the set for yours: `arm64`
 for a Mac with Apple Silicon, `amd64` for Windows, Intel or other x86 machines.
 `uname -m` prints `arm64`/`aarch64` or `x86_64`.
 
-This build: **`v1.0.0`**
+This build: **`v1.0.1`**
 
 ## What is where
 
@@ -48,9 +48,9 @@ This build: **`v1.0.0`**
 
 The release attached to this tag carries:
 
-* `os-arm64-v1.0.0.tar` (1,602 MB, 1,057 files) — operating-system source for arm64 (section 3.2)
-* `os-amd64-v1.0.0.tar` (1,680 MB, 1,079 files) — operating-system source for amd64 (section 3.2)
-* `components-large-v1.0.0.tar` (131 MB) — files of `components/` too large for git, at the same paths; listed in `manifests/components-MANIFEST.txt`
+* `os-arm64-v1.0.1.tar` (1,602 MB, 1,057 files) — operating-system source for arm64 (section 3.2)
+* `os-amd64-v1.0.1.tar` (1,680 MB, 1,079 files) — operating-system source for amd64 (section 3.2)
+* `components-large-v1.0.1.tar` (131 MB) — files of `components/` too large for git, at the same paths; listed in `manifests/components-MANIFEST.txt`
 
 They are plain `.tar`; the files inside are already compressed. Where one
 architecture's set is split into parts, extract every part into the same
