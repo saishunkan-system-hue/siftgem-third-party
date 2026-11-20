@@ -7,8 +7,16 @@ databases of the release 1.0.1-rc.1 containers, linux/arm64, on 2026-11-19.
 SiftGem's images are built on each machine; this describes the images it
 was run on.
 
+UPDATED 2026-11-20, by hand, still build v1.0.1: the frontend image now
+builds on nginx:1.31.9-alpine (security fix; 1.31.8 has open CVEs). That
+image carries nginx 1.31.9 and libxslt 1.1.43-r4; every other package is
+unchanged. Their entries are ADDED below, beside the 1.31.8 / 1.1.43-r3
+ones, which stay for machines still running the earlier image. The six
+libxslt 1.1.43-r4 files are in the release asset os-supplement-v1.0.1.tar,
+not in os-<arch>-v1.0.1.tar.
+
 Scope     : copyleft+alpine  (copyleft Debian packages, plus every Alpine package because apk ships no licence text)
-Files     : 1056
+Files     : 1062
 Failures  : 0   (1 reported by the run; resolved by hand — see MANUAL COMPLETION)
 
 NOT IN APORTS, AND NOTHING OWED. These come from a third-party apk
@@ -45,6 +53,36 @@ than a silent absence.
       published  : NGINX Packaging <nginx-packaging@f5.com>
       notice     : /usr/share/licenses/ inside the image
   nginx-module-xslt 1.31.8-r1
+      licence    : 2-clause BSD-like license
+      images     : frontend
+      published  : NGINX Packaging <nginx-packaging@f5.com>
+      notice     : /usr/share/licenses/ inside the image
+  nginx 1.31.9-r1
+      licence    : 2-clause BSD-like license
+      images     : frontend
+      published  : NGINX Packaging <nginx-packaging@f5.com>
+      notice     : /usr/share/licenses/ inside the image
+  nginx-module-acme 1.31.9.0.4.2-r1
+      licence    : 2-clause BSD-like license
+      images     : frontend
+      published  : NGINX Packaging <nginx-packaging@f5.com>
+      notice     : /usr/share/licenses/ inside the image
+  nginx-module-geoip 1.31.9-r1
+      licence    : 2-clause BSD-like license
+      images     : frontend
+      published  : NGINX Packaging <nginx-packaging@f5.com>
+      notice     : /usr/share/licenses/ inside the image
+  nginx-module-image-filter 1.31.9-r1
+      licence    : 2-clause BSD-like license
+      images     : frontend
+      published  : NGINX Packaging <nginx-packaging@f5.com>
+      notice     : /usr/share/licenses/ inside the image
+  nginx-module-njs 1.31.9.1.0.2-r1
+      licence    : 2-clause BSD-like license
+      images     : frontend
+      published  : NGINX Packaging <nginx-packaging@f5.com>
+      notice     : /usr/share/licenses/ inside the image
+  nginx-module-xslt 1.31.9-r1
       licence    : 2-clause BSD-like license
       images     : frontend
       published  : NGINX Packaging <nginx-packaging@f5.com>
@@ -2324,6 +2362,55 @@ alpine  libxslt                    1.1.43-r3
     images  : frontend
     file    : alpine/libxslt-1.1.43-r3/libxslt-1.1.43.tar.xz
     ref     : aports 730f2f5bdc97be98b2beee33f55134c622e6189c (main)
+    verified: sha512, against the publisher's own checksum
+    sha256  : 5a3d6b383ca5afc235b171118e90f5ff6aa27e9fea3303065231a6d403f0183a
+    bytes   : 1,518,364
+
+alpine  libxslt                    1.1.43-r4
+    licence : X11
+    images  : frontend
+    file    : alpine/libxslt-1.1.43-r4/APKBUILD
+    ref     : aports e85ecba78539486bd0a685963ca5da3e1652fbd0 (main)
+    sha256  : b8b665ac4db34f7aaef152ba5fed01e931a98d60d2c15a7ce89381611bb70707
+    bytes   : 2,170
+
+alpine  libxslt                    1.1.43-r4
+    licence : X11
+    images  : frontend
+    file    : alpine/libxslt-1.1.43-r4/CVE-2025-10911.patch
+    ref     : aports e85ecba78539486bd0a685963ca5da3e1652fbd0 (main)
+    sha256  : 463aea2eacebcc3f73383828c2c055e05dd9fe5d4a7276c0e1d748c55be1ab02
+    bytes   : 22,984
+
+alpine  libxslt                    1.1.43-r4
+    licence : X11
+    images  : frontend
+    file    : alpine/libxslt-1.1.43-r4/CVE-2026-125350.patch
+    ref     : aports e85ecba78539486bd0a685963ca5da3e1652fbd0 (main)
+    sha256  : 45fcc40a7a9e8e3a83a3d30e0ccd959af2d8b707a6a05246b0a41a2d4613eecc
+    bytes   : 1,651
+
+alpine  libxslt                    1.1.43-r4
+    licence : X11
+    images  : frontend
+    file    : alpine/libxslt-1.1.43-r4/CVE-2026-87636.patch
+    ref     : aports e85ecba78539486bd0a685963ca5da3e1652fbd0 (main)
+    sha256  : dfeb8418499779927a8a9c720c8ee195bf4a4c7d9a1cd55692d4e68b354dbf9e
+    bytes   : 1,645
+
+alpine  libxslt                    1.1.43-r4
+    licence : X11
+    images  : frontend
+    file    : alpine/libxslt-1.1.43-r4/CVE-2026-9947.patch
+    ref     : aports e85ecba78539486bd0a685963ca5da3e1652fbd0 (main)
+    sha256  : 4dc2f0a0e9c675bd45d39ddb20425e218bf373c937c6ba9e43300d7ab96ee8c0
+    bytes   : 1,448
+
+alpine  libxslt                    1.1.43-r4
+    licence : X11
+    images  : frontend
+    file    : alpine/libxslt-1.1.43-r4/libxslt-1.1.43.tar.xz
+    ref     : aports e85ecba78539486bd0a685963ca5da3e1652fbd0 (main)
     verified: sha512, against the publisher's own checksum
     sha256  : 5a3d6b383ca5afc235b171118e90f5ff6aa27e9fea3303065231a6d403f0183a
     bytes   : 1,518,364

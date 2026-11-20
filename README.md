@@ -51,6 +51,7 @@ The release attached to this tag carries:
 * `os-arm64-v1.0.1.tar` (1,602 MB, 1,057 files) — operating-system source for arm64 (section 3.2)
 * `os-amd64-v1.0.1.tar` (1,680 MB, 1,079 files) — operating-system source for amd64 (section 3.2)
 * `components-large-v1.0.1.tar` (131 MB) — files of `components/` too large for git, at the same paths; listed in `manifests/components-MANIFEST.txt`
+* `os-supplement-v1.0.1.tar` (1.5 MB, 6 files) — added 2026-11-20: source of libxslt 1.1.43-r4 for both architectures, carried by the frontend image once it moved to nginx 1.31.9; listed in `manifests/os-*-MANIFEST.txt` and in the release asset `os-supplement-v1.0.1-MANIFEST.txt`
 
 They are plain `.tar`; the files inside are already compressed. Where one
 architecture's set is split into parts, extract every part into the same
